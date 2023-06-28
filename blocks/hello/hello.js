@@ -9,5 +9,5 @@ export default async (block) => {
   const nameEl = createTag('p', {class: 'hello-name'}, (name || "World"));
   block.replaceChildren(helloEl, nameEl);
   if (hello) window?.gsap?.to(helloEl,  { x: 200 });
-  if (name)  window?.gsap?.to(helloEl,  { x: 400 });
+  if (name)  window?.gsap?.to(nameEl,  { x: 400 });
 };
